@@ -1,0 +1,40 @@
+#titulo{
+    color: #25089c;
+    text-align: center;
+    font-family: fantasy;
+}
+
+#titulo_tabela{
+    text-align: center;
+}
+
+#rodape{
+    font-size: medium;
+    text-align: center;
+}
+
+.texto{
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: justify;
+    font-size: large;
+}
+
+.topicos {
+    font-size: medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.subtitulo{
+    font-family: fantasy;
+}
+
+.tabela{
+    background-color: #b1d2fa;
+    text-align: justify;
+}
+
+
+
+
+
