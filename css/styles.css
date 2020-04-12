@@ -1,3 +1,11 @@
+html{
+    font-size: 100%;
+}
+
+#body{
+    background-color: #e6ffff;
+}
+
 #titulo{
     color: #25089c;
     text-align: center;
@@ -13,11 +21,31 @@
     text-align: center;
 }
 
-.texto{
-    margin-left: 12px;
-    margin-right: 12px;
-    text-align: justify;
-    font-size: large;
+#zanini{
+    border: 2px solid black ;
+    margin-left: 30px;
+
+}
+
+#maua {
+    width:100%;
+    height: auto;
+    min-width: 360px;
+    min-height: 240px;
+}
+
+.caixa1{
+    display: inline-block;
+    width: 50%;
+    height: 550px;
+    min-width: 360px;
+}
+
+.caixa2{
+    display: inline-block;
+    width: 40%;
+    height: 400px;
+    min-width: 360px;
 }
 
 .topicos {
@@ -32,6 +60,26 @@
 .tabela{
     background-color: #b1d2fa;
     text-align: justify;
+    width: 300px;
+}
+
+.texto{
+    margin-left: 12px;
+    margin-right: 12px;
+    text-align: justify;
+    font-size: large;
+}
+
+.img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    max-height:250px ;
+    max-width:1000px ;
+}
+
+.centro{
+    text-align: center;
 }
 
 
