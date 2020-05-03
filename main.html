@@ -1,67 +1,293 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Pagina html</title>
-        <link rel="stylesheet" href="css/styles.css">
-    </head>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
 
-    <body id= "body">
-        
-        <img src="img/logo_maua.png" alt="Logo da MAUA" width="100" height="50">
-        <h1 id="titulo">Engenharia da computação</h1>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
 
-        <div class="centro">
-            <img src="img/galera.jpg" alt="Galera de comp" class="img">
+  <body>
+    <!--Barra de navegação-->
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="main.html">
+          <img src="img/Logo_Maua.png" height="50" alt="Imagem aleatória" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav ml-auto topnav">
+            <li class="nav-item active">
+              <a class="nav-link" href="main.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="prof_infos.html">Infos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="form_sug.html">Sugestões</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link btn btn-primary text-white"
+                type="button"
+                href="#"
+                data-toggle="modal"
+                data-target="#navModal"
+                >Login
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!--Modal-->
+        <div class="modal" id="navModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <!-- Modal Header -->
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Login
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  ×
+                </button>
+              </div>
+
+              <!--Modal body-->
+              <div class="modal-body">
+                <form>
+                  <label class="sr-only" for="email">
+                    E-mail
+                  </label>
+                  <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon1"
+                        ><i class="fa fa-user"></i
+                      ></span>
+                    </div>
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="E-mail"
+                      id="email"
+                    />
+                  </div>
+
+                  <label class="sr-only" for="Password">Senha</label>
+                  <div class="input-group mb-2">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="basic-addon2"
+                        ><i class="fa fa-key"></i
+                      ></span>
+                    </div>
+                    <input
+                      id="password"
+                      type="password"
+                      class="form-control"
+                      placeholder="Senha"
+                    />
+                  </div>
+                </form>
+              </div>
+
+              <!--Modal footer-->
+              <div class="modal-footer">
+                <button type="submit" class="btn btn-primary">Entrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!--Fim da Barra-->
+
+    <!--Carousel-->
+    <div class="col-sm-8 m-auto">
+      <div id="carousel1" class="carousel slide mb-4" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel1" data-slide-to="0"></li>
+          <li data-target="#carousel1" data-slide-to="1"></li>
+          <li data-target="#carousel1" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <a href="#carousel1" class="carousel-control-prev" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a href="#carousel1" class="carousel-control-next" data-slide="next"
+            ><span class="carousel-control-next-icon"></span>
+          </a>
+          <div class="carousel-item active text-center">
+            <img src="img/car-1.jpg" height="400" alt="Slide 1" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/car-2.JPG" height="400" alt="Slide 2" />
+          </div>
+          <div class="carousel-item text-center">
+            <img src="img/car-3.jpg" height="400" alt="Slide 3" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim do Carousel-->
+
+    <!--Main text-->
+
+    <div class="container">
+      <p class="text-justify">
+        O Instituto Mauá de Tecnologia - IMT, fundado em 11 de dezembro de 1961,
+        é uma entidade de direito privado - associação sem fins lucrativos - de
+        utilidade pública, dedicada ao ensino e à pesquisa científica e
+        tecnológica, visando à formação de recursos humanos altamente
+        qualificados que contribuam para o desenvolvimento do País.
+      </p>
+    </div>
+
+    <!--Fim do Main text-->
+
+    <!--Cartoes-->
+    <div class="container">
+      <h3>Nossos Cursos</h3>
+      <div class="row">
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Administração
+            </div>
+            <div class="card-body">
+              <img src="img/adm.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O Administrador Mauá é um profissional preparado para atuar,
+                sempre como líder, nos mais diversos mercados de trabalho:
+                instituições financeiras, empresas de serviços, consultorias,
+                comércio varejista ou atacadista e indústrias de diversos
+                segmentos, como Automobilístico, Eletroeletrônico, Alimentício,
+                entre outros. Os alunos desenvolvem, ao longo do curso,
+                capacitação e treinamento para a tomada de decisões e para a
+                resolução de problemas de gestão empresarial.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              4 anos de duração
+            </div>
+          </div>
         </div>
 
-        <p class="texto">A Engenharia de Computação está presente em nosso dia a dia e nas mais diversas áreas: 
-            Educação, Indústrias, Redes de Comunicação e Dispositivos Móveis, Transportes, Entreterimento, entre outras.
-             Essa diversidade de aplicações para o Engenheiro de Computação qualifica-o para atuar como 
-            desenvolvedor, engenheiro, empreendedor, executivo de grandes corporações.
-        </p>
-        <p class="texto">A graduação em Engenharia de Computação da Mauá oferece aos alunos uma formação com base nos conceitos fundamentais da Engenharia, 
-            até a formação especializada em Sistemas Embarcados, Software, Infraestrutura e Segurança, 
-            Ciência de Dados e suas inter-relações. O profissional de Engenharia de Computação formado pela 
-            Mauá está habilitado para atuar nas seguintes áreas e segmentos:
-        </p>
-        <div class="caixa1">
-            <ul class="topicos"> 
-                <li>desenvolvimento de aplicações para sistemas embarcados;</li> 
-                <li>desenvolvimento de games;</li> 
-                <li>suporte a softwares para redes e cidades inteligentes;</li> 
-                <li>novas tecnologias e desafios;</li> 
-                <li>prestação de serviços e consultoria;</li>
-                <li>pesquisa e ensino superior.</li>
-            </ul>
-
-            <h3 class="subtitulo">Coordenador</h3>
-            <p>Angelo Sebastiao Zanini</p>
-            <img src="img/Zanini.jpg" alt="Coordenador" id="zanini">
-        
-            <h3 class="subtitulo">Campus de São Caetano do Sul</h3>
-            <table class="tabela" border="1">
-                <tr>
-                    <td id="titulo_tabela"><Strong>Diurno</Strong></td>
-                </tr>
-                <tr>
-                    <td><strong> Duração:</strong> 5 anos</td>
-                </tr>
-                <tr>
-                    <td><strong>Horário: </strong>26 horas/semana distribuídas de 2ª. a 6ª. entre 07:40 e 18:30 </td>
-                </tr>
-                <tr>
-                    <td><strong>Mensalidade:</strong> R$ 3.150,00 </td>
-                </tr>
-            </table>
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Design
+            </div>
+            <div class="card-body">
+              <img src="img/dsg.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O curso de Design da Mauá, oferecido desde 2007, possui nota
+                máxima no MEC, tem conquistado seu espaço no mundo acadêmico e
+                já deixa sua marca de qualidade no mercado. Por meio de uma
+                importante convivência com a tecnologia e os negócios, num
+                ambiente bem estruturado, com professores comprometidos e bem
+                preparados, apresenta um currículo arrojado e um projeto
+                pedagógico atualizadíssimo; Vem formando Designers talentosos e
+                atendendo às demandas do mercado.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              4 anos de duração
+            </div>
+          </div>
         </div>
 
-        <div class="caixa2">
-            <img src="img/maua.jpg" alt="Maua" id="maua">
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia de Alimentos
+            </div>
+            <div class="card-body">
+              <img src="img/eda.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                A área de produção de alimentos vem se desenvolvendo e a cada
+                dia cresce a necessidade de profissionais especializados para
+                atender essa demanda. O engenheiro de alimentos pode atuar nas
+                mais diversas áreas relacionadas à cadeia alimentícia: Produção
+                Industrial, Desenvolvimento de Produtos, Otimização de
+                Processos, Garantia da Qualidade, Consultoria, Fiscalização ou
+                até mesmo nas áreas comerciais e de marketing de produtos
+                alimentícios.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
         </div>
 
-        <h4 id="rodape"> Para mais informaçoes acessar: <a href="https://maua.br/">Maua.br</a></h4>
-         
-    </body>
+        <div class="col-md my-2">
+          <div class="card text-center">
+            <div class="card-header">
+              Engenharia Civil
+            </div>
+            <div class="card-body">
+              <img src="img/enc.png" alt="Imagem aleatória" />
+              <p class="card-text">
+                O curso tem uma área de atuação ampla que exige do profissional
+                uma formação diversificada e pronto para atender obras
+                distintas: construção de edifícios residenciais, ferrovias,
+                aeroportos ou faça o planejamento de sistemas de saneamento
+                básico para cidades, podendo trabalhar com arquitetos e
+                ambientalistas em grandes construções.
+              </p>
+            </div>
+            <div class="card-footer text-muted">
+              5 anos de duração
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fim dos Cartoes-->
+
+    <!--Footer-->
+    <nav aria-label="breadcrumb" class="container">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Home</li>
+      </ol>
+    </nav>
+
+    <!--Fim do Footer-->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
