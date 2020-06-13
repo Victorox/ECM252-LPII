@@ -1,0 +1,112 @@
+<body>
+  <!--Barra de navegação-->
+  <div class="container">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <a class="navbar-brand" href="main.html">
+        <img
+          src="http://tecnologiademateriais.com.br/portaltm/wp-content/uploads/2018/06/nota_10.png"
+          height="50"
+          alt="Imagem aleatória"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="navbar-nav ml-auto topnav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/professores">Professores</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/sugestoes">Sugestões</a>
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link btn btn-primary text-white"
+              (click)="showModal = true"
+              type="button"
+              href="#"
+              data-toggle="modal"
+              data-target="#navModal"
+              >Login
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!--Modal-->
+      <div class="modal" id="navModal" [ngClass]="{ show: showModal }">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">
+                Login
+              </h4>
+              <button
+                type="button"
+                (click)="showModal = false"
+                class="close"
+                data-dismiss="modal"
+              >
+                ×
+              </button>
+            </div>
+
+            <!--Modal body-->
+            <div class="modal-body">
+              <form>
+                <label class="sr-only" for="email">
+                  E-mail
+                </label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1"
+                      ><i class="fa fa-user"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="email"
+                    class="form-control"
+                    placeholder="E-mail"
+                    id="email"
+                  />
+                </div>
+
+                <label class="sr-only" for="Password">Senha</label>
+                <div class="input-group mb-2">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon2"
+                      ><i class="fa fa-key"></i
+                    ></span>
+                  </div>
+                  <input
+                    id="password"
+                    type="password"
+                    class="form-control"
+                    placeholder="Senha"
+                  />
+                </div>
+              </form>
+            </div>
+
+            <!--Modal footer-->
+            <div class="modal-footer">
+              <button type="submit" class="btn btn-primary">Entrar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!--Fim da Barra-->
+  <router-outlet></router-outlet>
+</body>

@@ -1,0 +1,11 @@
+.container .row .text-justify {
+  padding-top: 10px;
+}
+.table.table-hover th {
+  color: #00293f;
+  text-align: center;
+}
+.table.table-hover td {
+  color: #00293f;
+  text-align: center;
+}
