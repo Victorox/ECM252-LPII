@@ -32,7 +32,6 @@
           <li class="nav-item">
             <a
               class="nav-link btn btn-primary text-white"
-              (click)="showModal = true"
               type="button"
               href="#"
               data-toggle="modal"
@@ -43,7 +42,7 @@
         </ul>
       </div>
       <!--Modal-->
-      <div class="modal" id="navModal" [ngClass]="{ show: showModal }">
+      <div class="modal" id="navModal">
         <div class="modal-dialog">
           <div class="modal-content">
             <!-- Modal Header -->
@@ -51,12 +50,7 @@
               <h4 class="modal-title">
                 Login
               </h4>
-              <button
-                type="button"
-                (click)="showModal = false"
-                class="close"
-                data-dismiss="modal"
-              >
+              <button type="button" class="close" data-dismiss="modal">
                 ×
               </button>
             </div>
