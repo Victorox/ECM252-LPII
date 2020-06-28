@@ -1,0 +1,112 @@
+<div class="container">
+  <h3>Cadastro de Alunos</h3>
+  <p class="text-justify">
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet laborum sunt
+    minus tempora voluptatum delectus, odit ex deleniti! Deleniti harum at
+    reiciendis ipsum repellendus? Deleniti quia vitae vel animi quod. Lorem
+    ipsum dolor sit amet consectetur adipisicing elit. Modi quae doloribus sunt
+    ratione dolorem iusto reprehenderit, a, consequatur deserunt beatae tempora!
+    Illo optio reiciendis inventore perferendis accusamus ipsum, vitae
+    praesentium?
+  </p>
+</div>
+
+<div class="container">
+  <form #alunoForm="ngForm" (ngSubmit)="salvar(alunoForm)">
+    <div class="row mt-5">
+      <div class="form-group col-12">
+        <label for="nomeInput">Nome do Aluno</label>
+        <input
+          type="text"
+          placeholder="Nome"
+          class="form-control p-4"
+          name="nome"
+          ngModel
+          #nomeInput
+        />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="form-group col-12">
+        <label for="idadeInput">Idade do Aluno</label>
+        <input
+          type="text"
+          placeholder="Idade"
+          class="form-control p-4"
+          name="idade"
+          ngModel
+          #idadeInput
+        />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="form-group col-12">
+        <label for="emailInput">E-mail</label>
+        <input
+          type="text"
+          placeholder="E-mail"
+          class="form-control p-4"
+          name="email"
+          ngModel
+          #emailInput
+        />
+      </div>
+    </div>
+    <div class="row mt-5">
+      <div class="form-group col-12">
+        <label for="cursoInput">Curso</label>
+        <select
+          name=""
+          id="cursoInput"
+          class="form-control"
+          name="curso"
+          ngModel
+          #cursoInput
+        >
+          <option value="">Selecione</option>
+          <option *ngFor="let p of curso">{{ p }}</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <button
+          class="btn btn-primary btn-block"
+          (click)="
+            onAdicionarAluno(
+              nomeInput.value,
+              idadeInput.value,
+              cursoInput.value
+            )
+          "
+          type="button"
+        >
+          Enviar
+        </button>
+      </div>
+    </div>
+  </form>
+
+  <div class="row mt-5">
+    <div class="card col-12">
+      <div class="card">
+        <div class="card-header">
+          Alunos Cadastrados
+        </div>
+        <div class="card-body">
+          <div class="form-group row" *ngFor="let aluno of alunos">
+            <div class="col-4">Nome: {{ aluno.nome }}</div>
+            <div class="col-4">Idade: {{ aluno.idade }}</div>
+            <div class="col-4">Curso: {{ aluno.curso }}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<nav aria-label="breadcrumb" class="container">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="main.html">Home</a></li>
+    <li class="breadcrumb-item active">Alunos</li>
+  </ol>
+</nav>
